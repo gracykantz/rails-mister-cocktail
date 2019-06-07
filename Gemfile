@@ -21,6 +21,7 @@ gem 'webpacker'
 gem 'autoprefixer-rails'
 # imports font-awesome and sass
 gem 'font-awesome-sass', '~> 5.6.1'
+gem 'dotenv-rails', groups: [:development, :test]
 # simple forms!
 gem 'simple_form'
 # Use CoffeeScript for .coffee assets and views
