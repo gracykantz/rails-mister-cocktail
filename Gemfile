@@ -21,7 +21,12 @@ gem 'webpacker'
 gem 'autoprefixer-rails'
 # imports font-awesome and sass
 gem 'font-awesome-sass', '~> 5.6.1'
+# to protect the .env file
 gem 'dotenv-rails', groups: [:development, :test]
+# to upload images
+gem 'cloudinary', '~> 1.9.1'
+# upload images/files related to a model
+gem 'carrierwave', '~> 1.2'
 # simple forms!
 gem 'simple_form'
 # Use CoffeeScript for .coffee assets and views

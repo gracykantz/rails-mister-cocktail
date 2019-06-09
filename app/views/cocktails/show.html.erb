@@ -1,1 +1,16 @@
-show.html.erb
+<div class="banner" style="background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url( <%= cl_image_path @cocktail.photo %>);">
+  <h1><%= @cocktail.name %></h1>
+</div>
+<div class="card-shape">
+  <%= simple_form_for([@cocktail, @dose]) do |f| %>
+    <%=  f.input :description, placeholder: "Enter the amount of your ingredient" %>
+    <%= f.association :ingredient%>
+    <%= f.submit value: "Add an ingredient", class: "btn btn-primary button-center" %>
+  <% end %>
+</div>
+<div class="list-ingredients">
+  <h3>Ingredients</h3>
+  <% @cocktail.doses.each do |dose| %>
+  <h5><%= dose.description %> of <%= dose.ingredient.name %></h5>
+  <% end %>
+</div>
