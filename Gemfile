@@ -26,7 +26,7 @@ gem 'dotenv-rails', groups: [:development, :test]
 # to upload images
 gem 'cloudinary', '~> 1.9.1'
 # upload images/files related to a model
-gem 'carrierwave', '~> 1.2'
+gem 'carrierwave', '~> 1.3'
 # simple forms!
 gem 'simple_form'
 # Use CoffeeScript for .coffee assets and views
